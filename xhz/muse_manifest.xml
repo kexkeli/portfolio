@@ -1,0 +1,185 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kekeli.cc" resolutions="1x" timestamp="1581448246257">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="512648160" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="p1.png" crc="4127124188" seo="true" mt="1570829688000"/>
+    <file name="p2.png" crc="4059302807" seo="true" mt="1570829813000"/>
+    <file name="p3.png" crc="3762275074" seo="true" mt="1570829766000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="scene2.png" crc="8623590" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-矢量智能对象 拷贝 2c.png" crc="3800856712" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-矢量智能对象c.png" crc="382255233" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-图层 12c.png" crc="3793956639" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-形状 1c.png" crc="3982508089" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-矢量智能对象 拷贝c.png" crc="4079515846" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-矢量智能对象c2.png" crc="4019798282" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-矢量智能对象 拷贝 3（合并）c.png" crc="4183418512" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-矢量智能对象5 拷贝c.png" crc="3833371232" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-4-矢量智能对象5 拷贝 2c.png" crc="173060749" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="scene1.png" crc="179401783" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-1-矢量智能对象c.png" crc="20434790" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-1-矢量智能对象c2.png" crc="3801964520" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-1-矢量智能对象c3.png" crc="3758497142" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-1-矢量智能对象c4.png" crc="3761355699" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-1-矢量智能对象c5.png" crc="3944802162" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-1-tb2rgjld7fb_ujksnavxxxfmvxa___1872810511c.png" crc="3795090819" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="scene3.png" crc="297834729" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-5-矢量智能对象c.png" crc="3833589409" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-5-矢量智能对象c2.png" crc="147972405" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-5-矢量智能对象c3.png" crc="4138166138" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-5-矢量智能对象c4.png" crc="3786815454" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-5-矢量智能对象4c.png" crc="296408043" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="scene4.png" crc="3920893523" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2cuuierln8kjjszfpxxbzavxa___1872810511c.png" crc="158022873" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2.3hgd7fb_ujkhfnrxxc3vpxa___1872810511c.png" crc="320115157" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2.3hgd7fb_ujkhfnrxxc3vpxa___1872810511 拷贝 2c.png" crc="269053170" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-矢量智能对象c.png" crc="508099795" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-矢量智能对象c2.png" crc="341925865" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2.3hgd7fb_ujkhfnrxxc3vpxa___1872810511 拷贝c.png" crc="153061947" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2rgjld7fb_ujksnavxxxfmvxa___1872810511c.png" crc="343277746" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb26pwherbm8kjjszffxxaynpxa___1872810511c.png" crc="3954900069" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2pgnad7fb_ujksne1xxbe4xxa___1872810511c.png" crc="3957992381" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2ltkfetfn8kjjszfjxxxgvpxa___1872810511c.png" crc="3831090245" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2xv6incbi8kjjy1zdxxbe1vxa___1872810511c.png" crc="3786668666" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-矢量智能对象c3.png" crc="4137711774" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-矢量智能对象c4.png" crc="168254248" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-3-tb2.3hgd7fb_ujkhfnrxxc3vpxa___1872810511 拷贝 3c.png" crc="465499623" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="scene5.png" crc="4168587218" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-2-tb2orplnhpi8kjjsspfxxccfxxa___1872810511c.png" crc="162566771" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-2-图层 1c.png" crc="4082437268" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-2-店铺 (1)c.png" crc="3986711495" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-2-图层 2c.png" crc="4185871850" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="未标题-2-图层 3c.png" crc="4193959528" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1-1.png" crc="61291058" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1-2.png" crc="329865755" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2-1.png" crc="4121150353" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2-2.png" crc="190317510" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="3-1.png" crc="3777345180" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="3-2.png" crc="3976258995" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="web_01.png" crc="4159525624" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="web_02.png" crc="394432326" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="web_03.png" crc="199094009" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logo.png" crc="410603061" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="424373681" mt="1581447991674" redirect="true"/>
+</manifest>

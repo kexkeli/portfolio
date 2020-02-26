@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1582665726159">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1582679440655">
   <folder name="css">
     <file name="site_global.css" crc="4282570759"/>
-    <file name="index.css" crc="512572527" ref="index"/>
+    <file name="index.css" crc="4045272360" ref="index"/>
   </folder>
   <folder name="fonts">
     <file name="oswald-bold.woff" crc="474070346"/>
@@ -18,6 +18,7 @@
     <file name="require.js" crc="7928878" ref="index"/>
   </folder>
   <folder name="images">
+    <file name="kexkeli-favicon.ico" crc="4284761555" ref="index"/>
     <file name="blank.gif" crc="4208392903" ref="index"/>
     <file name="cb2.jpg" crc="3773920540" seo="true" ref="index">
       <caption webpage="index" alt=""/>
@@ -57,5 +58,5 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="36127513" seo="true" mt="1582664887228" redirect="true"/>
+  <file name="index.html" crc="522659242" seo="true" mt="1582678135915" redirect="true"/>
 </manifest>

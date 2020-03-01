@@ -1,0 +1,69 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1583077788941">
+  <folder name="css">
+    <file name="site_global.css" crc="4032761925"/>
+    <file name="index.css" crc="141092215" ref="index"/>
+    <file name="nomq_index.css" crc="3787600569" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="oswald-bold.woff" crc="474070346"/>
+    <file name="oswald-bold.eot" crc="3795542740"/>
+  </folder>
+  <folder name="assets">
+    <file name="logo.svg" crc="4162972956" seo="true" mt="1580568717000"/>
+    <file name="1-2.jpg" crc="277333038" seo="true" mt="1582992409000"/>
+    <file name="3.png" crc="378541761" seo="true" mt="1582992453000"/>
+    <file name="5.jpg" crc="124704852" seo="true" mt="1582992477000"/>
+    <file name="6.jpg" crc="35276469" seo="true" mt="1582992641000"/>
+    <file name="8.jpg" crc="287906909" seo="true" mt="1582228121000"/>
+    <file name="12.jpg" crc="3968057950" seo="true" mt="1582762524000"/>
+    <file name="11-2.jpg" crc="3889280391" seo="true" mt="1583014515000"/>
+    <file name="9-2.png" crc="4182385162" seo="true" mt="1583015097000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="527716135" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="kexkeli-favicon.ico" crc="4284761555" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="2.jpg" crc="3856638629" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="4.jpg" crc="274431076" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sx.jpg" crc="3847902505" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pocooa2.jpg" crc="392195289" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="nazha33.jpg" crc="466883288" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="7.jpg" crc="521440702" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="10.jpg" crc="228213640" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="13.gif" crc="1405256" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="509354896" seo="true" mt="1583077463479" redirect="true"/>
+</manifest>

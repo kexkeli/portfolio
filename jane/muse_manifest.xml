@@ -1,0 +1,94 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1583204412081">
+  <folder name="css">
+    <file name="site_global.css" crc="229390053"/>
+    <file name="index.css" crc="4010734" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="oswald-bold.woff" crc="474070346"/>
+    <file name="oswald-bold.eot" crc="3795542740"/>
+  </folder>
+  <folder name="assets">
+    <file name="01.svg" crc="3820691004" seo="true" mt="1583188511000"/>
+    <file name="02.svg" crc="374128497" seo="true" mt="1583188548000"/>
+    <file name="03.svg" crc="4214154253" seo="true" mt="1583188574000"/>
+    <file name="04.svg" crc="4081234948" seo="true" mt="1583188602000"/>
+    <file name="janeicon.svg" crc="95756627" seo="true" mt="1580929460000"/>
+    <file name="1-1.png" crc="3952631611" seo="true" mt="1583194362000"/>
+    <file name="1.png" crc="4255772581" seo="true" mt="1583194362000"/>
+    <file name="21.png" crc="173523879" seo="true" mt="1583194364000"/>
+    <file name="20.png" crc="365171790" seo="true" mt="1583194364000"/>
+    <file name="3.png" crc="426151886" seo="true" mt="1583194362000"/>
+    <file name="5.png" crc="4138723398" seo="true" mt="1583194362000"/>
+    <file name="7.png" crc="3825608741" seo="true" mt="1583194362000"/>
+    <file name="8.png" crc="122781642" seo="true" mt="1583194363000"/>
+    <file name="4.png" crc="4114042395" seo="true" mt="1583194362000"/>
+    <file name="11.png" crc="407697529" seo="true" mt="1583194363000"/>
+    <file name="9.png" crc="3837895322" seo="true" mt="1583194363000"/>
+    <file name="10.png" crc="352940526" seo="true" mt="1583194363000"/>
+    <file name="13.png" crc="374183188" seo="true" mt="1583194363000"/>
+    <file name="12.png" crc="4073040721" seo="true" mt="1583194363000"/>
+    <file name="6.png" crc="4187808774" seo="true" mt="1583194362000"/>
+    <file name="16.png" crc="4175285082" seo="true" mt="1583194364000"/>
+    <file name="14.png" crc="3990757451" seo="true" mt="1583194363000"/>
+    <file name="18.png" crc="394459558" seo="true" mt="1583194364000"/>
+    <file name="19.png" crc="407945754" seo="true" mt="1583194364000"/>
+    <file name="17.png" crc="4249115231" seo="true" mt="1583194364000"/>
+    <file name="15.png" crc="4027372981" seo="true" mt="1583194363000"/>
+    <file name="vip2.png" crc="37664844" seo="true" mt="1583199309000"/>
+    <file name="vip3.png" crc="3810690899" seo="true" mt="1583199309000"/>
+    <file name="vip4.png" crc="4224734170" seo="true" mt="1583199309000"/>
+    <file name="vip5.png" crc="294260418" seo="true" mt="1583199309000"/>
+    <file name="vip1.png" crc="357078526" seo="true" mt="1583199309000"/>
+    <file name="back.svg" crc="3939874587" seo="true" mt="1583202413000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="goalbg-crop-u787.png" crc="498493485" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="bigpic.jpg" crc="3890300789" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1.jpg" crc="3955747998" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2.png" crc="3818600296" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="3.jpg" crc="3938378518" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="4.png" crc="255432112" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="statubg-crop-u550.jpg" crc="13250587" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="goalicon.png" crc="64345305" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="frame.png" crc="4148883181" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="oldnews.png" crc="3853685137" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="colorheng-crop-u1435.jpg" crc="29144607" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="vipbg.png" crc="4080976823" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="frame2.png" crc="382555105" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="4083400010" mt="1583204383682" redirect="true"/>
+</manifest>

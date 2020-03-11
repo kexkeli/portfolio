@@ -1,0 +1,88 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1583897465580">
+  <folder name="css">
+    <file name="site_global.css" crc="229390053"/>
+    <file name="index.css" crc="4187246740" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="oswald-bold.woff" crc="474070346"/>
+    <file name="oswald-bold.eot" crc="3795542740"/>
+  </folder>
+  <folder name="assets">
+    <file name="app2-2.png" crc="65894322" seo="true" mt="1583696786000"/>
+    <file name="app2-3.png" crc="4090238989" seo="true" mt="1583696776000"/>
+    <file name="gftab.png" crc="169442310" seo="true" mt="1583891033000"/>
+    <file name="admintab.png" crc="530111519" seo="true" mt="1583891019000"/>
+    <file name="soundico.png" crc="4159072306" seo="true" mt="1583894028000"/>
+    <file name="intrest.png" crc="180229694" seo="true" mt="1583894349000"/>
+    <file name="sc1.png" crc="228224228" seo="true" mt="1583894952000"/>
+    <file name="sc2.png" crc="4097469550" seo="true" mt="1583894952000"/>
+    <file name="sc3.png" crc="4193389516" seo="true" mt="1583894952000"/>
+    <file name="sc4.png" crc="4214142936" seo="true" mt="1583894952000"/>
+    <file name="sc5.png" crc="454722458" seo="true" mt="1583894952000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="1.jpg" crc="324797734" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2.png" crc="164278880" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="4.jpg" crc="3811579923" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="m1.png" crc="190017101" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="m2.png" crc="4132025018" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="7.png" crc="268774347" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="m3.png" crc="515147849" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="app1.png" crc="492246193" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="app2.png" crc="4028265619" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="app3.png" crc="215880325" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="allapp.png" crc="23702816" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bg-crop-u4184.jpg" crc="297671168" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon1.png" crc="4010611969" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon2.png" crc="3886613894" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon3.png" crc="3847344892" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2-crop-u4386.png" crc="230759219" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="op1.png" crc="444479426" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="op2.png" crc="4064066442" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="180156742" mt="1583897335977" redirect="true"/>
+</manifest>

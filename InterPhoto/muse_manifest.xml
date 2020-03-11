@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1583897910498">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1583898075827">
   <folder name="css">
     <file name="site_global.css" crc="229390053"/>
-    <file name="index.css" crc="4187246740" ref="index"/>
+    <file name="index.css" crc="4183346647" ref="index"/>
   </folder>
   <folder name="fonts">
     <file name="oswald-bold.woff" crc="474070346"/>
@@ -84,5 +84,5 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="3849038574" mt="1583897907922" redirect="true"/>
+  <file name="index.html" crc="506070154" mt="1583898067416" redirect="true"/>
 </manifest>

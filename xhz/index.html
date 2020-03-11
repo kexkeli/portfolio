@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html class="nojs html" lang="zh-CN">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.0.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <title>熊孩子</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=229390053"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4002819125" id="pagesheet"/>
+    <!--HTML Widget code-->
+  
+  <style>
+  #mt-progress-bar {
+    position: fixed;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    opacity: 1;
+    z-index: 999;
+    max-width: 100%;
+    background-color: #FA3377;
+    -webkit-transition: width 580ms ease;
+    -o-transition: width 580ms ease;
+    transition: width 580ms ease;
+  }
+  </style>  
+
+<style>
+body {
+	min-height: 100vh;
+}
+
+.global-menu {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.global-menu__wrap a {
+	color: #7F7F7F;
+	font-family: inherit;
+	font-size: 1.5vmax;
+	line-height: 2;
+	opacity: 0;
+	text-decoration: none;
+	text-align: left;
+	font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+	letter-spacing: 40px;
+	pointer-events: none;
+	display: block;
+	margin: 0.25em 0;
+}
+
+.global-menu__item {
+	transform: translateY(-100%);
+	transition: transform 0.3s, opacity 0.3s;
+	transition-timing-function: ease-in;
+}
+
+.global-menu__wrap a:hover,
+.global-menu__wrap a:focus {
+	color: #FFFFFF;
+	text-decoration: line-through;
+}
+
+.global-menu__item:hover {
+	color: var(--color-menu-hover);
+}
+
+.global-menu__item.is-opened {
+	opacity: 1;
+	transform: translateY(0) rotate(0);
+	pointer-events: auto;
+	transition-timing-function: ease;
+}
+
+.global-menu__item:nth-of-type(1) {
+	transition-delay: 0s;
+}
+
+.global-menu__item.is-opened:nth-of-type(1) {
+	transition-delay: 0.85s;
+}
+
+.global-menu__item:nth-of-type(2) {
+	transition-delay: 0.05s;
+}
+
+.global-menu__item.is-opened:nth-of-type(2) {
+	transition-delay: 0.8s;
+}
+
+.global-menu__item:nth-of-type(3) {
+	transition-delay: 0.1s;
+}
+
+.global-menu__item.is-opened:nth-of-type(3) {
+	transition-delay: 0.75s;
+}
+
+.global-menu__item:nth-of-type(4) {
+	transition-delay: 0.15s;
+}
+
+.global-menu__item.is-opened:nth-of-type(4) {
+	transition-delay: 0.7s;
+}
+
+.global-menu__item:nth-of-type(5) {
+	transition-delay: 0.2s;
+}
+
+.global-menu__item.is-opened:nth-of-type(5) {
+	transition-delay: 0.65s;
+}
+
+.global-menu__item:nth-of-type(6) {
+	transition-delay: 0.25s;
+}
+
+.global-menu__item.is-opened:nth-of-type(6) {
+	transition-delay: 0.6s;
+}
+
+.global-menu__item:nth-of-type(7) {
+	transition-delay: 0.3s;
+}
+
+.global-menu__item.is-opened:nth-of-type(7) {
+	transition-delay: 0.55s;
+}
+
+.global-menu__item:nth-of-type(8) {
+	transition-delay: 0.35s;
+}
+
+.global-menu__item.is-opened:nth-of-type(8) {
+	transition-delay: 0.5s;
+}
+
+.global-menu__item:nth-of-type(9) {
+	transition-delay: 0.4s;
+}
+
+.global-menu__item.is-opened:nth-of-type(9) {
+	transition-delay: 0.45s;
+}
+
+.global-menu__item:nth-of-type(10) {
+	transition-delay: 0.45s;
+}
+
+.global-menu__item.is-opened:nth-of-type(10) {
+	transition-delay: 0.4s;
+}
+
+.global-menu__item:nth-of-type(11) {
+	transition-delay: 0.5s;
+}
+
+.global-menu__item.is-opened:nth-of-type(11) {
+	transition-delay: 0.35s;
+}
+
+.global-menu__item:nth-of-type(11) {
+	transition-delay: 0.55s;
+}
+
+.global-menu__item.is-opened:nth-of-type(11) {
+	transition-delay: 0.3s;
+}
+
+.global-menu__item:nth-of-type(11) {
+	transition-delay: 0.6s;
+}
+
+.global-menu__item.is-opened:nth-of-type(11) {
+	transition-delay: 0.25s;
+}
+
+.shape-overlays {
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.shape-overlays.is-opened {
+	pointer-events: auto;
+}
+
+.shape-overlays__path:nth-of-type(1) {
+	fill: #413F46;
+}
+
+.shape-overlays__path:nth-of-type(2) {
+	fill: #E6E5EA;
+}
+
+.shape-overlays__path:nth-of-type(3) {
+	fill: #141414;
+}
+
+@-webkit-keyframes intervalHamburgerBorder {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	80% {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
+
+@keyframes intervalHamburgerBorder {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	80% {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
+
+.hamburger {
+	width: 64px;
+	height: 64px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	z-index: 110;
+	border-radius: 50%;
+	background-color: transparent;
+	pointer-events: auto;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.hamburger::after {
+	width: 64px;
+	height: 64px;
+	box-sizing: border-box;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	border: 3px solid #353535;
+	border-radius: 50%;
+	-webkit-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+	-webkit-animation-name: intervalHamburgerBorder;
+	animation-name: intervalHamburgerBorder;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.hamburger__line {
+	width: 28px;
+	height: 2px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+}
+
+.hamburger__line-in {
+	width: 84px;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.hamburger__line-in::before,
+.hamburger__line-in::after {
+	width: 28px;
+	height: 2px;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	background-color: #494949;
+}
+
+.hamburger__line-in::before {
+	left: -56px;
+}
+
+.hamburger__line-in::after {
+	left: 0;
+}
+
+.hamburger__line--01,
+.hamburger__line--02,
+.hamburger__line--03,
+.hamburger__line--cross01,
+.hamburger__line--cross02 {
+	left: 18px;
+}
+
+.hamburger__line--01 {
+	top: 24.6px;
+}
+
+.hamburger__line--02,
+.hamburger__line--cross01,
+.hamburger__line--cross02 {
+	top: 31px;
+}
+
+.hamburger__line--03 {
+	top: 37.4px;
+}
+
+.hamburger__line--cross01 {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.hamburger__line--cross02 {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.hamburger__line {
+	-webkit-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+	-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hamburger__line-in {
+	-webkit-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+	-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hamburger__line-in::before,
+.hamburger__line-in::after {
+	-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+}
+
+.hamburger__line-in--cross01,
+.hamburger__line-in--cross02 {
+	-webkit-transform: translateX(-33.3%);
+	transform: translateX(-33.3%);
+}
+
+.hamburger__line-in--01 {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.hamburger__line-in--02 {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.hamburger__line-in--02::before,
+.hamburger__line-in--02::after {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hamburger__line-in--03 {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.hamburger__line-in--03::before,
+.hamburger__line-in--03::after {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hamburger__line-in--cross01 {
+	-webkit-transition-delay: 0.0s;
+	transition-delay: 0.0s;
+}
+
+.hamburger__line-in--cross02 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hamburger__line-in--cross02::before,
+.hamburger__line-in--cross02::after {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--01,
+.hamburger.is-opened-navi .hamburger__line-in--02,
+.hamburger.is-opened-navi .hamburger__line-in--03 {
+	-webkit-transform: translateX(33.3%);
+	transform: translateX(33.3%);
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--cross01,
+.hamburger.is-opened-navi .hamburger__line-in--cross02 {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--01 {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--02 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--03 {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--cross01 {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--cross02 {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.hamburger:hover .hamburger__line-in::before,
+.hamburger:hover .hamburger__line-in::after {
+	-webkit-transform: translateX(200%);
+	transform: translateX(200%);
+}
+
+.hamburger:hover .hamburger__line-in--01::before,
+.hamburger:hover .hamburger__line-in--01::after,
+.hamburger:hover .hamburger__line-in--02::before,
+.hamburger:hover .hamburger__line-in--02::after,
+.hamburger:hover .hamburger__line-in--03::before,
+.hamburger:hover .hamburger__line-in--03::after {
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.hamburger:hover .hamburger__line-in--cross01::before,
+.hamburger:hover .hamburger__line-in--cross01::after,
+.hamburger:hover .hamburger__line-in--cross02::before,
+.hamburger:hover .hamburger__line-in--cross02::after {
+	-webkit-transition-duration: 0s;
+	transition-duration: 0s;
+}
+
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross01::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross01::after,
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross02::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross02::after {
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.hamburger.is-opened-navi:hover .hamburger__line-in--01::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--01::after,
+.hamburger.is-opened-navi:hover .hamburger__line-in--02::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--02::after,
+.hamburger.is-opened-navi:hover .hamburger__line-in--03::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--03::after {
+	-webkit-transition-duration: 0s;
+	transition-duration: 0s;
+}
+</style>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style>
+.gs {
+  background-color: #0E1E28;
+  color: #fff;
+  text-align: center;
+}
+</style>
+
+<style>
+body {
+  overflow-x: hidden;
+}
+</style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- 
+//============================================================
+//
+// The MIT License
+//
+// Copyright (C) 2014 Matthew Wagerfield - @wagerfield
+//
+// Permission is hereby granted, free of charge, to any
+// person obtaining a copy of this software and associated
+// documentation files (the "Software"), to deal in the
+// Software without restriction, including without limitation
+// the rights to use, copy, modify, merge, publish, distribute,
+// sublicense, and/or sell copies of the Software, and to
+// permit persons to whom the Software is furnished to do
+// so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice
+// shall be included in all copies or substantial portions
+// of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
+// OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+// LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+// EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+// FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+// AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+// OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//============================================================
+ -->
+
+
+  <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <!--HTML Widget code-->
+  
+
+  
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu435"><!-- group -->
+    <div class="transition grpelem" id="u435"><!-- simple frame --></div>
+    <div class="size_fluid_width grpelem" id="u1694" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+
+    </div>
+   </div>
+   <div class="size_fixed" id="u3072" data-sizePolicy="fixed" data-pintopage="topleft"><!-- custom html -->
+    
+  <div class="hamburger js-hover">
+    <div class="hamburger__line hamburger__line--01">
+      <div class="hamburger__line-in hamburger__line-in--01"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--02">
+      <div class="hamburger__line-in hamburger__line-in--02"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--03">
+      <div class="hamburger__line-in hamburger__line-in--03"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--cross01">
+      <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--cross02">
+      <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+    </div>
+  </div>
+  <div class="global-menu">
+    <div id="svgmu" class="global-menu__wrap">
+    </div>
+  </div>
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+  </svg>
+
+   </div>
+   <div class="clearfix grpelem" id="pu436"><!-- group -->
+    <div class="transition grpelem" id="u436"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u437"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u438"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u439"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u440"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u441"><!-- simple frame --></div>
+    <div class="transition clearfix grpelem" id="u490-4"><!-- content -->
+     <p id="u490-2">Year-2018</p>
+    </div>
+    <div class="size_fixed grpelem" id="u1665" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+    </div>
+    <div class="grpelem" id="u1708"><!-- custom html -->
+     <html>
+<body>
+<center>
+<video src="http://kexkeli.cn/xhz/xhzban.mp4" loop autoplay muted width="1440" height="810">
+</video>
+
+</center>
+</body>
+</html>
+
+    </div>
+    <div class="size_fixed grpelem" id="u1716" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+    </div>
+    <div class="grpelem" id="u1721"><!-- custom html -->
+     <p align="left"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=680 height=52 src="//music.163.com/outchain/player?type=2&id=464015775&auto=1&height=32"></iframe></p>
+    </div>
+    <div class="clearfix grpelem" id="u1726-34" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+     <p>这是个很‘zheteng’的项目</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>我依旧记得项目经理的叮嘱，客户可是有设计师的，但人家很忙不像你，“需要付出十分的努力，被投诉就不好了”</p>
+     <p>&nbsp;</p>
+     <p>​好在领导了解情况后给我充分的时间</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>​另一方面，这也是紧急的项目，甲方急着上线，或多或少放水吧两个星期就完工了。整理确认稿的时候我发誓我要</p>
+     <p>&nbsp;</p>
+     <p>一个星期不用illustrator（真香～）</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>本人是手(鼠)残(绘) 业余设计爱好者，过程中也借鉴了很多参考，也在过程中学到很多东西</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>事后，项目经理说：知道为什么让你来做吗？因为你也是熊孩子……</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>SO SO</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>at last （除甲方提供的角色图外皆为项目成品）</p>
+    </div>
+    <div class="clip_frame grpelem" id="u2262"><!-- image -->
+     <img class="block" id="u2262_img" src="images/scene2.png?crc=4037252714" alt="" data-heightwidthratio="0.2085070892410342" data-image-width="1199" data-image-height="250"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2274" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2274 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:100.95220668959956px; }
+		#u2274 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2274 .layer1{ height:100.95220668959956px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2274 .layer img{ height:100.95220668959956px; overflow:hidden; }
+		#u2274 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2274 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2274 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2274 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2274 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2274" class="container">
+		<ul id="sceneu2274" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1-%e6%8b%b7%e8%b4%9d-2c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2257" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2257 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:162.401375978921px; }
+		#u2257 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2257 .layer1{ height:162.401375978921px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2257 .layer img{ height:162.401375978921px; overflow:hidden; }
+		#u2257 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2257 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2257 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2257 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2257 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2257" class="container">
+		<ul id="sceneu2257" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a15-%e6%8b%b7%e8%b4%9dc.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2316" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2316 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:98.31867086291436px; }
+		#u2316 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2316 .layer1{ height:98.31867086291436px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2316 .layer img{ height:98.31867086291436px; overflow:hidden; }
+		#u2316 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2316 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2316 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2316 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2316 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2316" class="container">
+		<ul id="sceneu2316" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1-%e6%8b%b7%e8%b4%9d-3%ef%bc%88%e5%90%88%e5%b9%b6%ef%bc%89c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2332" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2332 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:122.89833857864296px; }
+		#u2332 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2332 .layer1{ height:122.89833857864296px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2332 .layer img{ height:122.89833857864296px; overflow:hidden; }
+		#u2332 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2332 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2332 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2332 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2332 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2332" class="container">
+		<ul id="sceneu2332" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e5%9b%be%e5%b1%82-12c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2325" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2325 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:234.3846885749833px; }
+		#u2325 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2325 .layer1{ height:234.3846885749833px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2325 .layer img{ height:234.3846885749833px; overflow:hidden; }
+		#u2325 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2325 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2325 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2325 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2325 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2325" class="container">
+		<ul id="sceneu2325" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1-%e6%8b%b7%e8%b4%9dc.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2289" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2289 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:162.401375978921px; }
+		#u2289 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2289 .layer1{ height:162.401375978921px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2289 .layer img{ height:162.401375978921px; overflow:hidden; }
+		#u2289 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2289 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2289 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2289 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2289 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2289" class="container">
+		<ul id="sceneu2289" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a15-%e6%8b%b7%e8%b4%9d-2c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u2296"><!-- image -->
+     <img class="block" id="u2296_img" src="images/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c.png?crc=382255233" alt="" data-heightwidthratio="0.6032388663967612" data-image-width="247" data-image-height="149"/>
+    </div>
+    <div class="clip_frame grpelem" id="u2306"><!-- image -->
+     <img class="block" id="u2306_img" src="images/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c2.png?crc=4019798282" alt="" data-heightwidthratio="0.5234042553191489" data-image-width="235" data-image-height="123"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2339" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2339 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:245.2585006566904px; }
+		#u2339 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2339 .layer1{ height:245.2585006566904px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2339 .layer img{ height:245.2585006566904px; overflow:hidden; }
+		#u2339 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2339 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2339 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2339 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2339 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2339" class="container">
+		<ul id="sceneu2339" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-4-%e5%bd%a2%e7%8a%b6-1c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u2346"><!-- image -->
+     <img class="block" id="u2346_img" src="images/scene1.png?crc=3943532877" alt="" data-heightwidthratio="0.20881863560732114" data-image-width="1202" data-image-height="251"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2356" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2356 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:178.90768886630224px; }
+		#u2356 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2356 .layer1{ height:178.90768886630224px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2356 .layer img{ height:178.90768886630224px; overflow:hidden; }
+		#u2356 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2356 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2356 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2356 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2356 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2356" class="container">
+		<ul id="sceneu2356" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-1-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c2.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2363" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2363 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:341.45125462203015px; }
+		#u2363 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2363 .layer1{ height:341.45125462203015px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2363 .layer img{ height:341.45125462203015px; overflow:hidden; }
+		#u2363 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2363 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2363 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2363 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2363 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2363" class="container">
+		<ul id="sceneu2363" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-1-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c3.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2370" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2370 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:237.608245002552px; }
+		#u2370 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2370 .layer1{ height:237.608245002552px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2370 .layer img{ height:237.608245002552px; overflow:hidden; }
+		#u2370 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2370 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2370 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2370 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2370 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2370" class="container">
+		<ul id="sceneu2370" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-1-tb2rgjld7fb_ujksnavxxxfmvxa___1872810511c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2380" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2380 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:33.43335282011484px; }
+		#u2380 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2380 .layer1{ height:33.43335282011484px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2380 .layer img{ height:33.43335282011484px; overflow:hidden; }
+		#u2380 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2380 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2380 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2380 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2380 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2380" class="container">
+		<ul id="sceneu2380" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-1-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c4.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2387" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2387 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:97.68321975011692px; }
+		#u2387 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2387 .layer1{ height:97.68321975011692px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2387 .layer img{ height:97.68321975011692px; overflow:hidden; }
+		#u2387 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2387 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2387 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2387 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2387 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2387" class="container">
+		<ul id="sceneu2387" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-1-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c5.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2394" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2394 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:96.8031907433591px; }
+		#u2394 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2394 .layer1{ height:96.8031907433591px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2394 .layer img{ height:96.8031907433591px; overflow:hidden; }
+		#u2394 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2394 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2394 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2394 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2394 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2394" class="container">
+		<ul id="sceneu2394" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-1-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u2401"><!-- image -->
+     <img class="block" id="u2401_img" src="images/scene3.png?crc=418795824" alt="" data-heightwidthratio="0.2085070892410342" data-image-width="1199" data-image-height="250"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2411" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2411 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:146.96484412855423px; }
+		#u2411 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2411 .layer1{ height:146.96484412855423px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2411 .layer img{ height:146.96484412855423px; overflow:hidden; }
+		#u2411 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2411 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2411 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2411 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2411 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2411" class="container">
+		<ul id="sceneu2411" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="4" data-limit-x="4" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-5-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2435" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2435 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:267.81277452415856px; }
+		#u2435 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2435 .layer1{ height:267.81277452415856px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2435 .layer img{ height:267.81277452415856px; overflow:hidden; }
+		#u2435 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2435 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2435 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2435 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2435 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2435" class="container">
+		<ul id="sceneu2435" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-5-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a14c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2442" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2442 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:172px; }
+		#u2442 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2442 .layer1{ height:172px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2442 .layer img{ height:172px; overflow:hidden; }
+		#u2442 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2442 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2442 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2442 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2442 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2442" class="container">
+		<ul id="sceneu2442" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-5-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c2.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2449" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2449 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:144.129685212299px; }
+		#u2449 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2449 .layer1{ height:144.129685212299px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2449 .layer img{ height:144.129685212299px; overflow:hidden; }
+		#u2449 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2449 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2449 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2449 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2449 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2449" class="container">
+		<ul id="sceneu2449" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-5-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c3.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2461" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2461 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:75.63986090776004px; }
+		#u2461 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2461 .layer1{ height:75.63986090776004px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2461 .layer img{ height:75.63986090776004px; overflow:hidden; }
+		#u2461 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2461 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2461 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2461 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2461 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2461" class="container">
+		<ul id="sceneu2461" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-5-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c4.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u2638"><!-- image -->
+     <img class="block" id="u2638_img" src="images/scene4.png?crc=4115500758" alt="" data-heightwidthratio="0.20916666666666667" data-image-width="1200" data-image-height="251"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2658" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2658 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:136.19137529923444px; }
+		#u2658 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2658 .layer1{ height:136.19137529923444px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2658 .layer img{ height:136.19137529923444px; overflow:hidden; }
+		#u2658 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2658 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2658 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2658 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2658 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2658" class="container">
+		<ul id="sceneu2658" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c4.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2750" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2750 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:206.19888730473565px; }
+		#u2750 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2750 .layer1{ height:206.19888730473565px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2750 .layer img{ height:206.19888730473565px; overflow:hidden; }
+		#u2750 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2750 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2750 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2750 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2750 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2750" class="container">
+		<ul id="sceneu2750" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb2.3hgd7fb_ujkhfnrxxc3vpxa___1872810511-%e6%8b%b7%e8%b4%9d-2c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2665" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2665 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:95.77947932618676px; }
+		#u2665 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2665 .layer1{ height:95.77947932618676px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2665 .layer img{ height:95.77947932618676px; overflow:hidden; }
+		#u2665 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2665 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2665 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2665 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2665 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2665" class="container">
+		<ul id="sceneu2665" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c3.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2743" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2743 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:206.19888730473565px; }
+		#u2743 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2743 .layer1{ height:206.19888730473565px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2743 .layer img{ height:206.19888730473565px; overflow:hidden; }
+		#u2743 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2743 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2743 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2743 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2743 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2743" class="container">
+		<ul id="sceneu2743" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb2.3hgd7fb_ujkhfnrxxc3vpxa___1872810511-%e6%8b%b7%e8%b4%9d-3c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2672" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2672 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:259.2029400856396px; }
+		#u2672 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2672 .layer1{ height:259.2029400856396px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2672 .layer img{ height:259.2029400856396px; overflow:hidden; }
+		#u2672 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2672 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2672 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2672 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2672 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2672" class="container">
+		<ul id="sceneu2672" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb2rgjld7fb_ujksnavxxxfmvxa___1872810511c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2691" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2691 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:314.55156608097735px; }
+		#u2691 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2691 .layer1{ height:314.55156608097735px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2691 .layer img{ height:314.55156608097735px; overflow:hidden; }
+		#u2691 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2691 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2691 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2691 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2691 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2691" class="container">
+		<ul id="sceneu2691" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb26pwherbm8kjjszffxxaynpxa___1872810511c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2679" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2679 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:165.18695842745845px; }
+		#u2679 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2679 .layer1{ height:165.18695842745845px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2679 .layer img{ height:165.18695842745845px; overflow:hidden; }
+		#u2679 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2679 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2679 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2679 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2679 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2679" class="container">
+		<ul id="sceneu2679" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb2ltkfetfn8kjjszfjxxxgvpxa___1872810511c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2698" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2698 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:132.67675916247995px; }
+		#u2698 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2698 .layer1{ height:132.67675916247995px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2698 .layer img{ height:132.67675916247995px; overflow:hidden; }
+		#u2698 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2698 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2698 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2698 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2698 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2698" class="container">
+		<ul id="sceneu2698" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb2pgnad7fb_ujksne1xxbe4xxa___1872810511c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2705" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2705 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:132.67675916247995px; }
+		#u2705 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2705 .layer1{ height:132.67675916247995px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2705 .layer img{ height:132.67675916247995px; overflow:hidden; }
+		#u2705 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2705 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2705 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2705 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2705 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2705" class="container">
+		<ul id="sceneu2705" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb2xv6incbi8kjjy1zdxxbe1vxa___1872810511c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u2712"><!-- image -->
+     <img class="block" id="u2712_img" src="images/%e6%9c%aa%e6%a0%87%e9%a2%98-3-tb2cuuierln8kjjszfpxxbzavxa___1872810511c.png?crc=4232694426" alt="" data-heightwidthratio="1.1101694915254237" data-image-width="118" data-image-height="131"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2724" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2724 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:142.34453781512582px; }
+		#u2724 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2724 .layer1{ height:142.34453781512582px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2724 .layer img{ height:142.34453781512582px; overflow:hidden; }
+		#u2724 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2724 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2724 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2724 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2724 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2724" class="container">
+		<ul id="sceneu2724" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c2.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2731" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2731 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:91.78866768759563px; }
+		#u2731 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2731 .layer1{ height:91.78866768759563px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2731 .layer img{ height:91.78866768759563px; overflow:hidden; }
+		#u2731 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2731 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2731 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2731 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2731 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2731" class="container">
+		<ul id="sceneu2731" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-3-%e7%9f%a2%e9%87%8f%e6%99%ba%e8%83%bd%e5%af%b9%e8%b1%a1c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u2757"><!-- image -->
+     <img class="block" id="u2757_img" src="images/scene5.png?crc=359723445" alt="" data-heightwidthratio="0.2085070892410342" data-image-width="1199" data-image-height="250"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2814" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2814 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:241.9748358309107px; }
+		#u2814 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2814 .layer1{ height:241.9748358309107px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2814 .layer img{ height:241.9748358309107px; overflow:hidden; }
+		#u2814 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2814 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2814 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2814 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2814 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2814" class="container">
+		<ul id="sceneu2814" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="false" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-2-%e5%9b%be%e5%b1%82-1c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2776" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2776 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:228.71893226179225px; }
+		#u2776 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2776 .layer1{ height:228.71893226179225px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2776 .layer img{ height:228.71893226179225px; overflow:hidden; }
+		#u2776 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2776 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2776 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2776 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2776 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2776" class="container">
+		<ul id="sceneu2776" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-2-tb2orplnhpi8kjjsspfxxccfxxa___1872810511c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u2783"><!-- image -->
+     <img class="block" id="u2783_img" src="images/%e6%9c%aa%e6%a0%87%e9%a2%98-2-%e5%ba%97%e9%93%ba%20(1)c.png?crc=3945749578" alt="" data-heightwidthratio="0.5158730158730159" data-image-width="504" data-image-height="260"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u2793" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2793 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:250.67079906468896px; }
+		#u2793 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2793 .layer1{ height:250.67079906468896px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2793 .layer img{ height:250.67079906468896px; overflow:hidden; }
+		#u2793 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2793 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2793 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2793 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2793 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2793" class="container">
+		<ul id="sceneu2793" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="false" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-2-%e5%9b%be%e5%b1%82-3c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u2800" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u2800 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:175.25947492293167px; }
+		#u2800 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u2800 .layer1{ height:175.25947492293167px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u2800 .layer img{ height:175.25947492293167px; overflow:hidden; }
+		#u2800 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u2800 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u2800 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u2800 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u2800 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru2800" class="container">
+		<ul id="sceneu2800" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="false" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/%e6%9c%aa%e6%a0%87%e9%a2%98-2-%e5%9b%be%e5%b1%82-2c.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="transition clearfix grpelem" id="u2843-4"><!-- content -->
+     <p id="u2843-2">Banner01</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2867-4"><!-- content -->
+     <p id="u2867-2">Banner02</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2879-4"><!-- content -->
+     <p id="u2879-2">Banner03</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2888-4"><!-- content -->
+     <p id="u2888-2">Banner04</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2900-4"><!-- content -->
+     <p id="u2900-2">Banner05</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2849-4"><!-- content -->
+     <p id="u2849-2">熊文化</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2864-4"><!-- content -->
+     <p id="u2864-2">熊宣言</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2876-4"><!-- content -->
+     <p id="u2876-2">熊宝藏</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2891-4"><!-- content -->
+     <p id="u2891-2">熊战队</p>
+    </div>
+    <div class="transition clearfix grpelem" id="u2903-4"><!-- content -->
+     <p id="u2903-2">熊小店</p>
+    </div>
+    <div class="clip_frame grpelem" id="u2906"><!-- image -->
+     <img class="block" id="u2906_img" src="images/p1.png?crc=4133199593" alt="" data-heightwidthratio="0.6666666666666666" data-image-width="720" data-image-height="480"/>
+    </div>
+    <div class="clip_frame grpelem" id="u2916"><!-- image -->
+     <img class="block" id="u2916_img" src="images/p2.png?crc=3779959626" alt="" data-heightwidthratio="0.6666666666666666" data-image-width="720" data-image-height="480"/>
+    </div>
+    <div class="clip_frame grpelem" id="u2926"><!-- image -->
+     <img class="block" id="u2926_img" src="images/p3.png?crc=63720442" alt="" data-heightwidthratio="0.6666666666666666" data-image-width="720" data-image-height="480"/>
+    </div>
+    <div class="museBGSize grpelem" id="u2936" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+    <div class="museBGSize grpelem" id="u2937" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+    <div class="museBGSize grpelem" id="u2938" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+    <div class="clearfix grpelem" id="u2993-13" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+     <p id="u2993">&nbsp;</p>
+     <p id="u2993-3">Day1-3:先完成制作内页风格设计，提交至甲方并根据意见小内容修改</p>
+     <p id="u2993-4">&nbsp;</p>
+     <p id="u2993-6">Day4-7:内页风格的设计得到确认后开始首页稿的设计，根据提供的首页内容与参考网站（三只松鼠），与对方交接人交流确认方向，以首屏的视觉导向工厂流水线，拟讲故事的方式给用户呈现网站首页的画面</p>
+     <p id="u2993-7">&nbsp;</p>
+     <p id="u2993-9">Day8-9:修改首页三模块形象小图，完成。⬇️</p>
+     <p id="u2993-10">&nbsp;</p>
+     <p id="u2993-11">&nbsp;</p>
+    </div>
+    <div class="clip_frame grpelem" id="u2996" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+     <img class="block" id="u2996_img" src="images/web_01.png?crc=341227378" alt="" width="1199" height="937"/>
+    </div>
+    <div class="clip_frame grpelem" id="u2998" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+     <img class="block" id="u2998_img" src="images/web_02.png?crc=4189796397" alt="" width="1199" height="937"/>
+    </div>
+    <div class="clip_frame grpelem" id="u3000" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+     <img class="block" id="u3000_img" src="images/web_03.png?crc=3829057169" alt="" width="1199" height="937"/>
+    </div>
+    <div class="clip_frame grpelem" id="u3057" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+     <img class="block" id="u3057_img" src="images/logo.png?crc=410603061" alt="" width="357" height="356"/>
+    </div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="images/1-2.png?crc=329865755" alt=""/>
+   <img class="preload" src="images/2-2.png?crc=190317510" alt=""/>
+   <img class="preload" src="images/3-2.png?crc=3976258995" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="服务器上的某些文件可能缺失或不正确。请在清除浏览器高速缓存后重试。如果问题仍然存在，请联系网站作者。",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musepolyfill.bgsize"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+(function(){
+	try{
+
+if(12 == 1){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a>";
+}
+else if(12 == 2){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a>";
+}
+else if(12 == 3){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a>";
+}
+else if(12 == 4){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a>";
+}
+else if(12 == 5){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a>";
+}
+else if(12 == 6){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/g-force' target='_self'>G-force · 广发运动</a>";
+}
+else if(12 == 7){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/g-force' target='_self'>G-force · 广发运动</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a>";
+}
+else if(12 == 8){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/g-force' target='_self'>G-force · 广发运动</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a>";
+}
+else if(12 == 9){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/g-force' target='_self'>G-force · 广发运动</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a>";
+}
+else if(12 == 10){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/g-force' target='_self'>G-force · 广发运动</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xzh' target='_self'>小紫盒 App icon</a>";
+}
+else if(12 == 11){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/g-force' target='_self'>G-force · 广发运动</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xzh' target='_self'>小紫盒 App icon</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/pocooa' target='_self'>Poco员工工作oa</a>";
+}
+else{
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/g-force' target='_self'>G-force · 广发运动</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xzh' target='_self'>小紫盒 App icon</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/pocooa' target='_self'>Poco员工工作oa</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/c4d' target='_self'>Just Cinema4d</a>";
+}
+
+require(['https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js'], function() {
+//
+// these easing functions are based on the code of glsl-easing module.
+// https://github.com/glslify/glsl-easings
+//
+
+const ease = {
+  exponentialIn: (t) => {
+    return t == 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0));
+  },
+  exponentialOut: (t) => {
+    return t == 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t);
+  },
+  exponentialInOut: (t) => {
+    return t == 0.0 || t == 1.0
+      ? t
+      : t < 0.5
+        ? +0.5 * Math.pow(2.0, (20.0 * t) - 10.0)
+        : -0.5 * Math.pow(2.0, 10.0 - (t * 20.0)) + 1.0;
+  },
+  sineOut: (t) => {
+    const HALF_PI = 1.5707963267948966;
+    return Math.sin(t * HALF_PI);
+  },
+  circularInOut: (t) => {
+    return t < 0.5
+        ? 0.5 * (1.0 - Math.sqrt(1.0 - 4.0 * t * t))
+        : 0.5 * (Math.sqrt((3.0 - 2.0 * t) * (2.0 * t - 1.0)) + 1.0);
+  },
+  cubicIn: (t) => {
+    return t * t * t;
+  },
+  cubicOut: (t) => {
+    const f = t - 1.0;
+    return f * f * f + 1.0;
+  },
+  cubicInOut: (t) => {
+    return t < 0.5
+      ? 4.0 * t * t * t
+      : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0;
+  },
+  quadraticOut: (t) => {
+    return -t * (t - 2.0);
+  },
+  quarticOut: (t) => {
+    return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
+  },
+}
+
+class ShapeOverlays {
+  constructor(elm) {
+    this.elm = elm;
+    this.path = elm.querySelectorAll('path');
+    this.numPoints = 18;
+    this.duration = 600;
+    this.delayPointsArray = [];
+    this.delayPointsMax = 300;
+    this.delayPerPath = 100;
+    this.timeStart = Date.now();
+    this.isOpened = false;
+    this.isAnimating = false;
+  }
+  toggle() {
+    this.isAnimating = true;
+    const range = 4 * Math.random() + 6;
+    for (var i = 0; i < this.numPoints; i++) {
+      const radian = i / (this.numPoints - 1) * Math.PI;
+      this.delayPointsArray[i] = (Math.sin(-radian) + Math.sin(-radian * range) + 2) / 4 * this.delayPointsMax;
+    }
+    if (this.isOpened === false) {
+      this.open();
+    } else {
+      this.close();
+    }
+  }
+  open() {
+    this.isOpened = true;
+    this.elm.classList.add('is-opened');
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  close() {
+    this.isOpened = false;
+    this.elm.classList.remove('is-opened');
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  updatePath(time) {
+    const points = [];
+    for (var i = 0; i < this.numPoints + 1; i++) {
+      points[i] = ease.cubicInOut(Math.min(Math.max(time - this.delayPointsArray[i], 0) / this.duration, 1)) * 100
+    }
+
+    let str = '';
+    str += (this.isOpened) ? `M 0 0 V ${points[0]} ` : `M 0 ${points[0]} `;
+    for (var i = 0; i < this.numPoints - 1; i++) {
+      const p = (i + 1) / (this.numPoints - 1) * 100;
+      const cp = p - (1 / (this.numPoints - 1) * 100) / 2;
+      str += `C ${cp} ${points[i]} ${cp} ${points[i + 1]} ${p} ${points[i + 1]} `;
+    }
+    str += (this.isOpened) ? `V 0 H 0` : `V 100 H 0`;
+    return str;
+  }
+  render() {
+    if (this.isOpened) {
+      for (var i = 0; i < this.path.length; i++) {
+        this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * i)));
+      }
+    } else {
+      for (var i = 0; i < this.path.length; i++) {
+        this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * (this.path.length - i - 1))));
+      }
+    }
+  }
+  renderLoop() {
+    this.render();
+    if (Date.now() - this.timeStart < this.duration + this.delayPerPath * (this.path.length - 1) + this.delayPointsMax) {
+      requestAnimationFrame(() => {
+        this.renderLoop();
+      });
+    }
+    else {
+      this.isAnimating = false;
+    }
+  }
+}
+
+(function() {
+  const elmHamburger = document.querySelector('.hamburger');
+  const gNavItems = document.querySelectorAll('.global-menu__item');
+  const elmOverlay = document.querySelector('.shape-overlays');
+  const overlay = new ShapeOverlays(elmOverlay);
+  const gNavWrap = document.querySelector('.global-menu__wrap');
+
+  elmHamburger.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+  elmOverlay.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+$('.global-menu__wrap a[href*="#"]:not([href="#"])').click(function() {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+});
+}());
+
+$(function() {
+  $('.global-menu__wrap a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top -0
+        }, 1000, 'linear');
+        return false;
+      }
+    }
+  });
+});
+
+});
+
+	}
+	catch(e)
+	{
+		Muse.Assert.fail('Error with Widget:SVG Menus - Menu 1 (1.0) ParamHTMLOnDocReady Handler ' + e.toString());
+	}
+})();/* Widget:SVG Menus - Menu 1 (1.0) */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=4286661555" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  
+<script>
+  $(document).ready(() => {
+    $('body').prepend('<div id="mt-progress-bar"></div>');
+    const theBar = $('#mt-progress-bar');
+
+    $(window).scroll(() => {
+      const verticalPosition = $(window).scrollTop();
+      const totalHeight = $('body').height();
+      const viewportHeight = $(window).height();
+      
+      const totalScroll = (verticalPosition / (totalHeight - viewportHeight)) * 100;
+      theBar.css('width', totalScroll + '%');
+    });
+  });
+
+  console.log('Scroll Progress Bar (1.0) - Muse-Themes.com');
+</script>
+
+<script src="https://cdn.jsdelivr.net/vivus/0.4.0/vivus.min.js"></script>
+
+<script>
+$(function() {
+  var $body = $(document);
+  $body.bind('scroll', function() {
+      if ($body.scrollLeft() !== 0) {
+          $body.scrollLeft(0);
+      }
+  });
+});
+</script>
+
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2274');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2274 = document.getElementById('sceneu2274');
+		    var parallaxu2274 = new Parallax(sceneu2274);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2257');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2257 = document.getElementById('sceneu2257');
+		    var parallaxu2257 = new Parallax(sceneu2257);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2316');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2316 = document.getElementById('sceneu2316');
+		    var parallaxu2316 = new Parallax(sceneu2316);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2332');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2332 = document.getElementById('sceneu2332');
+		    var parallaxu2332 = new Parallax(sceneu2332);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2325');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2325 = document.getElementById('sceneu2325');
+		    var parallaxu2325 = new Parallax(sceneu2325);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2289');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2289 = document.getElementById('sceneu2289');
+		    var parallaxu2289 = new Parallax(sceneu2289);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2339');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2339 = document.getElementById('sceneu2339');
+		    var parallaxu2339 = new Parallax(sceneu2339);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2356');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2356 = document.getElementById('sceneu2356');
+		    var parallaxu2356 = new Parallax(sceneu2356);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2363');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2363 = document.getElementById('sceneu2363');
+		    var parallaxu2363 = new Parallax(sceneu2363);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2370');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2370 = document.getElementById('sceneu2370');
+		    var parallaxu2370 = new Parallax(sceneu2370);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2380');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2380 = document.getElementById('sceneu2380');
+		    var parallaxu2380 = new Parallax(sceneu2380);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2387');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2387 = document.getElementById('sceneu2387');
+		    var parallaxu2387 = new Parallax(sceneu2387);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2394');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2394 = document.getElementById('sceneu2394');
+		    var parallaxu2394 = new Parallax(sceneu2394);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2411');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2411 = document.getElementById('sceneu2411');
+		    var parallaxu2411 = new Parallax(sceneu2411);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2435');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2435 = document.getElementById('sceneu2435');
+		    var parallaxu2435 = new Parallax(sceneu2435);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2442');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2442 = document.getElementById('sceneu2442');
+		    var parallaxu2442 = new Parallax(sceneu2442);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2449');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2449 = document.getElementById('sceneu2449');
+		    var parallaxu2449 = new Parallax(sceneu2449);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2461');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2461 = document.getElementById('sceneu2461');
+		    var parallaxu2461 = new Parallax(sceneu2461);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2658');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2658 = document.getElementById('sceneu2658');
+		    var parallaxu2658 = new Parallax(sceneu2658);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2750');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2750 = document.getElementById('sceneu2750');
+		    var parallaxu2750 = new Parallax(sceneu2750);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2665');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2665 = document.getElementById('sceneu2665');
+		    var parallaxu2665 = new Parallax(sceneu2665);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2743');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2743 = document.getElementById('sceneu2743');
+		    var parallaxu2743 = new Parallax(sceneu2743);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2672');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2672 = document.getElementById('sceneu2672');
+		    var parallaxu2672 = new Parallax(sceneu2672);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2691');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2691 = document.getElementById('sceneu2691');
+		    var parallaxu2691 = new Parallax(sceneu2691);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2679');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2679 = document.getElementById('sceneu2679');
+		    var parallaxu2679 = new Parallax(sceneu2679);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2698');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2698 = document.getElementById('sceneu2698');
+		    var parallaxu2698 = new Parallax(sceneu2698);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2705');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2705 = document.getElementById('sceneu2705');
+		    var parallaxu2705 = new Parallax(sceneu2705);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2724');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2724 = document.getElementById('sceneu2724');
+		    var parallaxu2724 = new Parallax(sceneu2724);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2731');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2731 = document.getElementById('sceneu2731');
+		    var parallaxu2731 = new Parallax(sceneu2731);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2814');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2814 = document.getElementById('sceneu2814');
+		    var parallaxu2814 = new Parallax(sceneu2814);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2776');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2776 = document.getElementById('sceneu2776');
+		    var parallaxu2776 = new Parallax(sceneu2776);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2793');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2793 = document.getElementById('sceneu2793');
+		    var parallaxu2793 = new Parallax(sceneu2793);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu2800');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu2800 = document.getElementById('sceneu2800');
+		    var parallaxu2800 = new Parallax(sceneu2800);
+		</script>
+   
+    
+   </body>
+</html>

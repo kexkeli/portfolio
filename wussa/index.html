@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html class="nojs html" lang="zh-CN">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.0.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <title>Wussa</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=229390053"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=232518531" id="pagesheet"/>
+    <!--HTML Widget code-->
+  
+  <style>
+  #mt-progress-bar {
+    position: fixed;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    opacity: 1;
+    z-index: 999;
+    max-width: 100%;
+    background-color: #FA3377;
+    -webkit-transition: width 580ms ease;
+    -o-transition: width 580ms ease;
+    transition: width 580ms ease;
+  }
+  </style>  
+
+<style>
+body {
+  overflow-x: hidden;
+}
+</style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- 
+//============================================================
+//
+// The MIT License
+//
+// Copyright (C) 2014 Matthew Wagerfield - @wagerfield
+//
+// Permission is hereby granted, free of charge, to any
+// person obtaining a copy of this software and associated
+// documentation files (the "Software"), to deal in the
+// Software without restriction, including without limitation
+// the rights to use, copy, modify, merge, publish, distribute,
+// sublicense, and/or sell copies of the Software, and to
+// permit persons to whom the Software is furnished to do
+// so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice
+// shall be included in all copies or substantial portions
+// of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
+// OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+// LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+// EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+// FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+// AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+// OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//============================================================
+ -->
+
+
+<style>
+body {
+	min-height: 100vh;
+}
+
+.global-menu {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.global-menu__wrap a {
+	color: #7F7F7F;
+	font-family: inherit;
+	font-size: 1.5vmax;
+	line-height: 2;
+	opacity: 0;
+	text-decoration: none;
+	text-align: left;
+	font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+	letter-spacing: 40px;
+	pointer-events: none;
+	display: block;
+	margin: 0.25em 0;
+}
+
+.global-menu__item {
+	transform: translateY(-100%);
+	transition: transform 0.3s, opacity 0.3s;
+	transition-timing-function: ease-in;
+}
+
+.global-menu__wrap a:hover,
+.global-menu__wrap a:focus {
+	color: #FFFFFF;
+	text-decoration: line-through;
+}
+
+.global-menu__item:hover {
+	color: var(--color-menu-hover);
+}
+
+.global-menu__item.is-opened {
+	opacity: 1;
+	transform: translateY(0) rotate(0);
+	pointer-events: auto;
+	transition-timing-function: ease;
+}
+
+.global-menu__item:nth-of-type(1) {
+	transition-delay: 0s;
+}
+
+.global-menu__item.is-opened:nth-of-type(1) {
+	transition-delay: 0.85s;
+}
+
+.global-menu__item:nth-of-type(2) {
+	transition-delay: 0.05s;
+}
+
+.global-menu__item.is-opened:nth-of-type(2) {
+	transition-delay: 0.8s;
+}
+
+.global-menu__item:nth-of-type(3) {
+	transition-delay: 0.1s;
+}
+
+.global-menu__item.is-opened:nth-of-type(3) {
+	transition-delay: 0.75s;
+}
+
+.global-menu__item:nth-of-type(4) {
+	transition-delay: 0.15s;
+}
+
+.global-menu__item.is-opened:nth-of-type(4) {
+	transition-delay: 0.7s;
+}
+
+.global-menu__item:nth-of-type(5) {
+	transition-delay: 0.2s;
+}
+
+.global-menu__item.is-opened:nth-of-type(5) {
+	transition-delay: 0.65s;
+}
+
+.global-menu__item:nth-of-type(6) {
+	transition-delay: 0.25s;
+}
+
+.global-menu__item.is-opened:nth-of-type(6) {
+	transition-delay: 0.6s;
+}
+
+.global-menu__item:nth-of-type(7) {
+	transition-delay: 0.3s;
+}
+
+.global-menu__item.is-opened:nth-of-type(7) {
+	transition-delay: 0.55s;
+}
+
+.global-menu__item:nth-of-type(8) {
+	transition-delay: 0.35s;
+}
+
+.global-menu__item.is-opened:nth-of-type(8) {
+	transition-delay: 0.5s;
+}
+
+.global-menu__item:nth-of-type(9) {
+	transition-delay: 0.4s;
+}
+
+.global-menu__item.is-opened:nth-of-type(9) {
+	transition-delay: 0.45s;
+}
+
+.global-menu__item:nth-of-type(10) {
+	transition-delay: 0.45s;
+}
+
+.global-menu__item.is-opened:nth-of-type(10) {
+	transition-delay: 0.4s;
+}
+
+.global-menu__item:nth-of-type(11) {
+	transition-delay: 0.5s;
+}
+
+.global-menu__item.is-opened:nth-of-type(11) {
+	transition-delay: 0.35s;
+}
+
+.global-menu__item:nth-of-type(11) {
+	transition-delay: 0.55s;
+}
+
+.global-menu__item.is-opened:nth-of-type(11) {
+	transition-delay: 0.3s;
+}
+
+.global-menu__item:nth-of-type(11) {
+	transition-delay: 0.6s;
+}
+
+.global-menu__item.is-opened:nth-of-type(11) {
+	transition-delay: 0.25s;
+}
+
+.shape-overlays {
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.shape-overlays.is-opened {
+	pointer-events: auto;
+}
+
+.shape-overlays__path:nth-of-type(1) {
+	fill: #413F46;
+}
+
+.shape-overlays__path:nth-of-type(2) {
+	fill: #E6E5EA;
+}
+
+.shape-overlays__path:nth-of-type(3) {
+	fill: #141414;
+}
+
+@-webkit-keyframes intervalHamburgerBorder {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	80% {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
+
+@keyframes intervalHamburgerBorder {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	80% {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
+
+.hamburger {
+	width: 64px;
+	height: 64px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	z-index: 110;
+	border-radius: 50%;
+	background-color: transparent;
+	pointer-events: auto;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.hamburger::after {
+	width: 64px;
+	height: 64px;
+	box-sizing: border-box;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	border: 3px solid #353535;
+	border-radius: 50%;
+	-webkit-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+	-webkit-animation-name: intervalHamburgerBorder;
+	animation-name: intervalHamburgerBorder;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.hamburger__line {
+	width: 28px;
+	height: 2px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+}
+
+.hamburger__line-in {
+	width: 84px;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.hamburger__line-in::before,
+.hamburger__line-in::after {
+	width: 28px;
+	height: 2px;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	background-color: #494949;
+}
+
+.hamburger__line-in::before {
+	left: -56px;
+}
+
+.hamburger__line-in::after {
+	left: 0;
+}
+
+.hamburger__line--01,
+.hamburger__line--02,
+.hamburger__line--03,
+.hamburger__line--cross01,
+.hamburger__line--cross02 {
+	left: 18px;
+}
+
+.hamburger__line--01 {
+	top: 24.6px;
+}
+
+.hamburger__line--02,
+.hamburger__line--cross01,
+.hamburger__line--cross02 {
+	top: 31px;
+}
+
+.hamburger__line--03 {
+	top: 37.4px;
+}
+
+.hamburger__line--cross01 {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.hamburger__line--cross02 {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.hamburger__line {
+	-webkit-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+	-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hamburger__line-in {
+	-webkit-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+	-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hamburger__line-in::before,
+.hamburger__line-in::after {
+	-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+}
+
+.hamburger__line-in--cross01,
+.hamburger__line-in--cross02 {
+	-webkit-transform: translateX(-33.3%);
+	transform: translateX(-33.3%);
+}
+
+.hamburger__line-in--01 {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.hamburger__line-in--02 {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.hamburger__line-in--02::before,
+.hamburger__line-in--02::after {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hamburger__line-in--03 {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.hamburger__line-in--03::before,
+.hamburger__line-in--03::after {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hamburger__line-in--cross01 {
+	-webkit-transition-delay: 0.0s;
+	transition-delay: 0.0s;
+}
+
+.hamburger__line-in--cross02 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hamburger__line-in--cross02::before,
+.hamburger__line-in--cross02::after {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--01,
+.hamburger.is-opened-navi .hamburger__line-in--02,
+.hamburger.is-opened-navi .hamburger__line-in--03 {
+	-webkit-transform: translateX(33.3%);
+	transform: translateX(33.3%);
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--cross01,
+.hamburger.is-opened-navi .hamburger__line-in--cross02 {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--01 {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--02 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--03 {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--cross01 {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.hamburger.is-opened-navi .hamburger__line-in--cross02 {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.hamburger:hover .hamburger__line-in::before,
+.hamburger:hover .hamburger__line-in::after {
+	-webkit-transform: translateX(200%);
+	transform: translateX(200%);
+}
+
+.hamburger:hover .hamburger__line-in--01::before,
+.hamburger:hover .hamburger__line-in--01::after,
+.hamburger:hover .hamburger__line-in--02::before,
+.hamburger:hover .hamburger__line-in--02::after,
+.hamburger:hover .hamburger__line-in--03::before,
+.hamburger:hover .hamburger__line-in--03::after {
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.hamburger:hover .hamburger__line-in--cross01::before,
+.hamburger:hover .hamburger__line-in--cross01::after,
+.hamburger:hover .hamburger__line-in--cross02::before,
+.hamburger:hover .hamburger__line-in--cross02::after {
+	-webkit-transition-duration: 0s;
+	transition-duration: 0s;
+}
+
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross01::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross01::after,
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross02::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--cross02::after {
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.hamburger.is-opened-navi:hover .hamburger__line-in--01::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--01::after,
+.hamburger.is-opened-navi:hover .hamburger__line-in--02::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--02::after,
+.hamburger.is-opened-navi:hover .hamburger__line-in--03::before,
+.hamburger.is-opened-navi:hover .hamburger__line-in--03::after {
+	-webkit-transition-duration: 0s;
+	transition-duration: 0s;
+}
+</style>
+
+  <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <!--HTML Widget code-->
+  
+
+  
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu435"><!-- group -->
+    <div class="transition grpelem" id="u435"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u436"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u437"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u438"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u439"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u440"><!-- simple frame --></div>
+    <div class="transition grpelem" id="u441"><!-- simple frame --></div>
+    <div class="clip_frame grpelem" id="u4758"><!-- image -->
+     <img class="block" id="u4758_img" src="images/1.jpg?crc=4156310770" alt="" data-heightwidthratio="0.7291666666666666" data-image-width="1920" data-image-height="1400"/>
+    </div>
+    <div class="transition clearfix grpelem" id="u490-4"><!-- content -->
+     <p id="u490-2">Year-2019</p>
+    </div>
+    <div class="size_fluid_width grpelem" id="u1694" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+
+    </div>
+    <div class="size_fixed grpelem" id="u4140" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+    </div>
+    <div class="clip_frame grpelem" id="u4778"><!-- image -->
+     <img class="block" id="u4778_img" src="images/2.png?crc=4135540732" alt="" data-heightwidthratio="0.09581497797356828" data-image-width="908" data-image-height="87"/>
+    </div>
+    <div class="clip_frame grpelem" id="u4798"><!-- image -->
+     <img class="block" id="u4798_img" src="images/3.png?crc=426675702" alt="" data-heightwidthratio="0.5458333333333333" data-image-width="1200" data-image-height="655"/>
+    </div>
+    <div class="clip_frame grpelem" id="u4812"><!-- image -->
+     <img class="block" id="u4812_img" src="images/4.jpg?crc=4120607807" alt="" data-heightwidthratio="0.655" data-image-width="1200" data-image-height="786"/>
+    </div>
+    <div class="size_fluid_width grpelem" id="u4828" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u4828 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:463px; }
+		#u4828 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u4828 .layer1{ height:463px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u4828 .layer img{ height:463px; overflow:hidden; }
+		#u4828 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u4828 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u4828 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u4828 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u4828 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru4828" class="container">
+		<ul id="sceneu4828" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/4-2.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u4837" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u4837 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:301px; }
+		#u4837 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u4837 .layer1{ height:301px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u4837 .layer img{ height:301px; overflow:hidden; }
+		#u4837 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u4837 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u4837 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u4837 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u4837 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru4837" class="container">
+		<ul id="sceneu4837" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="true" data-invert-y="false" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/4-3.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="size_fluid_width grpelem" id="u4847" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
+     
+
+	<style>
+		#u4847 .container{ position:relative; max-width:100%; margin:0 auto; padding:0; overflow:hidden; height:337px; }
+		#u4847 .layer{ display:block; margin-left:auto; margin-right:auto; width:100%; bottom:0; }
+		#u4847 .layer1{ height:337px; width:100%; min-width:100%; max-width:100%; bottom:0; margin-left:auto; margin-right:auto; }
+		#u4847 .layer img{ height:337px; overflow:hidden; }
+		#u4847 .layer img{ position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; }
+		
+		#u4847 .framed.scene{ padding:0; margin:0px; width:100%; height:100%; }
+		#u4847 .desktop.scene{ padding:0; margin:-125px; width:120%; height:120%; }
+		#u4847 .phone.scene{ padding:0; margin:-60px; width:120%; height:120%; }
+		#u4847 .tablet.scene{ padding:0; margin:-125px; width:125%; height:125%; }
+	
+	</style>
+
+	<div id="containeru4847" class="container">
+		<ul id="sceneu4847" class="scene framed" data-relativeInput="true" data-clipRelativeInput="true" data-limit-y="10" data-limit-x="10" data-invert-x="false" data-invert-y="true" data-friction-x="0.3" data-friction-y="0.3" data-origin-x="{param_originX}" data-origin-y="{param_originY}" >
+
+		<li class="layer layer1" data-depth="0.5" style="background: url(assets/4-4.png); margin-left: auto; margin-right: auto; background-size: cover; background-repeat: no-repeat;"></li>
+	<!-- Hide -->  
+		
+	</ul>
+	</div>
+
+
+
+    </div>
+    <div class="clip_frame grpelem" id="u4854"><!-- image -->
+     <img class="block" id="u4854_img" src="images/4-1.png?crc=69766589" alt="" data-heightwidthratio="0.15714285714285714" data-image-width="280" data-image-height="44"/>
+    </div>
+    <div class="clip_frame grpelem" id="u4864"><!-- image -->
+     <img class="block" id="u4864_img" src="images/5-1.jpg?crc=351482925" alt="" data-heightwidthratio="1.244019138755981" data-image-width="209" data-image-height="260"/>
+    </div>
+    <div class="clip_frame grpelem" id="u4872"><!-- image -->
+     <img class="block" id="u4872_img" src="images/5-2.jpg?crc=118674457" alt="" data-heightwidthratio="1.244019138755981" data-image-width="209" data-image-height="260"/>
+    </div>
+    <div class="clip_frame grpelem" id="u4879"><!-- image -->
+     <img class="block" id="u4879_img" src="images/5-3.jpg?crc=4055830972" alt="" data-heightwidthratio="1.244019138755981" data-image-width="209" data-image-height="260"/>
+    </div>
+    <div class="clip_frame grpelem" id="u4886"><!-- image -->
+     <img class="block" id="u4886_img" src="images/5-4.jpg?crc=525044595" alt="" data-heightwidthratio="1.244019138755981" data-image-width="209" data-image-height="260"/>
+    </div>
+    <div class="grpelem" id="u4932"><!-- custom html -->
+     <html>
+<body>
+<p align="left">
+<video src="http://kexkeli.cn/wussa/demovideo.mp4"  autoplay controls="controls" muted width="1200" height="614">
+</video>
+
+</p>
+</body>
+</html>
+
+    </div>
+    <div class="clip_frame grpelem" id="u4963"><!-- image -->
+     <img class="block" id="u4963_img" src="images/5-5.jpg?crc=451509946" alt="" data-heightwidthratio="1.244019138755981" data-image-width="209" data-image-height="260"/>
+    </div>
+    <div class="clip_frame grpelem" id="u4973"><!-- image -->
+     <img class="block" id="u4973_img" src="images/6.jpg?crc=483962625" alt="" data-heightwidthratio="0.6666666666666666" data-image-width="1920" data-image-height="1280"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5140"><!-- image -->
+     <img class="block" id="u5140_img" src="images/7-8.png?crc=289193691" alt="" data-heightwidthratio="2.116216216216216" data-image-width="370" data-image-height="783"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5150"><!-- image -->
+     <img class="block" id="u5150_img" src="images/7-9.png?crc=3816560647" alt="" data-heightwidthratio="2.116216216216216" data-image-width="370" data-image-height="783"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5160"><!-- image -->
+     <img class="block" id="u5160_img" src="images/7-10.png?crc=238200235" alt="" data-heightwidthratio="2.116216216216216" data-image-width="370" data-image-height="783"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5170"><!-- image -->
+     <img class="block" id="u5170_img" src="images/7-11.png?crc=3955669989" alt="" data-heightwidthratio="2.116216216216216" data-image-width="370" data-image-height="783"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5180"><!-- image -->
+     <img class="block" id="u5180_img" src="images/7-12.png?crc=3898279571" alt="" data-heightwidthratio="2.116216216216216" data-image-width="370" data-image-height="783"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5249"><!-- image -->
+     <img class="block" id="u5249_img" src="images/7-1.jpg?crc=515513551" alt="" data-heightwidthratio="2.164926931106472" data-image-width="479" data-image-height="1037"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5259"><!-- image -->
+     <img class="block" id="u5259_img" src="images/7-2.jpg?crc=3800227668" alt="" data-heightwidthratio="2.1670146137787056" data-image-width="479" data-image-height="1038"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5269"><!-- image -->
+     <img class="block" id="u5269_img" src="images/7-3.jpg?crc=211036764" alt="" data-heightwidthratio="2.162839248434238" data-image-width="479" data-image-height="1036"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5279"><!-- image -->
+     <img class="block" id="u5279_img" src="images/7-4.jpg?crc=4256756953" alt="" data-heightwidthratio="2.162839248434238" data-image-width="479" data-image-height="1036"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5289"><!-- image -->
+     <img class="block" id="u5289_img" src="images/7-5.jpg?crc=3836575663" alt="" data-heightwidthratio="2.1607515657620042" data-image-width="479" data-image-height="1035"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5299"><!-- image -->
+     <img class="block" id="u5299_img" src="images/7-6.jpg?crc=220879453" alt="" data-heightwidthratio="2.4342379958246347" data-image-width="479" data-image-height="1166"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5338"><!-- image -->
+     <img class="block" id="u5338_img" src="images/5.png?crc=107939158" alt="" data-heightwidthratio="0.1694915254237288" data-image-width="295" data-image-height="50"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5348"><!-- image -->
+     <img class="block" id="u5348_img" src="images/7.png?crc=3760261290" alt="" data-heightwidthratio="0.12482662968099861" data-image-width="721" data-image-height="90"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5358"><!-- image -->
+     <img class="block" id="u5358_img" src="images/9.jpg?crc=221264165" alt="" data-heightwidthratio="0.13333333333333333" data-image-width="1920" data-image-height="256"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5402"><!-- image -->
+     <img class="block" id="u5402_img" src="images/10-1.jpg?crc=305882907" alt="" data-heightwidthratio="2.0686070686070686" data-image-width="481" data-image-height="995"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5412"><!-- image -->
+     <img class="block" id="u5412_img" src="images/10-2-crop-u5412.jpg?crc=18480156" alt="" data-heightwidthratio="4.591666666666667" data-image-width="480" data-image-height="2204"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5422"><!-- image -->
+     <img class="block" id="u5422_img" src="images/10-3.jpg?crc=4095303573" alt="" data-heightwidthratio="0.22245322245322247" data-image-width="481" data-image-height="107"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5432"><!-- image -->
+     <img class="block" id="u5432_img" src="images/10-4.png?crc=4202914906" alt="" data-heightwidthratio="2.116216216216216" data-image-width="370" data-image-height="783"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5440"><!-- image -->
+     <img class="block" id="u5440_img" src="images/10-5.png?crc=536366974" alt="" data-heightwidthratio="2.116216216216216" data-image-width="370" data-image-height="783"/>
+    </div>
+    <div class="clip_frame grpelem" id="u5456"><!-- image -->
+     <img class="block" id="u5456_img" src="images/10.png?crc=62172629" alt="" data-heightwidthratio="0.1654275092936803" data-image-width="538" data-image-height="89"/>
+    </div>
+    <a class="nonblock nontext clip_frame grpelem" id="u5475" href="http://kexkeli.cn/wussa/app.jpg" target="_blank"><!-- image --><img class="block" id="u5475_img" src="images/11.png?crc=29286286" alt="" data-heightwidthratio="0.19696969696969696" data-image-width="264" data-image-height="52"/></a>
+   </div>
+   <div class="size_fixed" id="u4516" data-sizePolicy="fixed" data-pintopage="topleft"><!-- custom html -->
+    
+  <div class="hamburger js-hover">
+    <div class="hamburger__line hamburger__line--01">
+      <div class="hamburger__line-in hamburger__line-in--01"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--02">
+      <div class="hamburger__line-in hamburger__line-in--02"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--03">
+      <div class="hamburger__line-in hamburger__line-in--03"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--cross01">
+      <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+    </div>
+    <div class="hamburger__line hamburger__line--cross02">
+      <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+    </div>
+  </div>
+  <div class="global-menu">
+    <div id="svgmu" class="global-menu__wrap">
+    </div>
+  </div>
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+  </svg>
+
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="服务器上的某些文件可能缺失或不正确。请在清除浏览器高速缓存后重试。如果问题仍然存在，请联系网站作者。",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+(function(){
+	try{
+
+if(12 == 1){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a>";
+}
+else if(12 == 2){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a>";
+}
+else if(12 == 3){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a>";
+}
+else if(12 == 4){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a>";
+}
+else if(12 == 5){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a>";
+}
+else if(12 == 6){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/21camera' target='_self'>21 相机</a>";
+}
+else if(12 == 7){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/21camera' target='_self'>21 相机</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a>";
+}
+else if(12 == 8){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/21camera' target='_self'>21 相机</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a>";
+}
+else if(12 == 9){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/21camera' target='_self'>21 相机</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a>";
+}
+else if(12 == 10){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/21camera' target='_self'>21 相机</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xzh' target='_self'>小紫盒 App icon</a>";
+}
+else if(12 == 11){
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/21camera' target='_self'>21 相机</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xzh' target='_self'>小紫盒 App icon</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/pocooa' target='_self'>Poco员工工作oa</a>";
+}
+else{
+document.getElementById('svgmu').innerHTML = "<a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/crazybb' target='_self'>Crazybaby</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/illustrationh5' target='_self'>Illustrations & H5</a><a class='global-menu__item global-menu__item--demo-1' href='http://kexkeli.cn/jane' target='_self'>Jane · 简拼</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xhz' target='_self'>熊孩子</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/wussa' target='_self'>Wussa · 舞时</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/21camera' target='_self'>21 相机</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/alibaba' target='_self'>阿里巴巴国际站中文版</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/InterPhoto' target='_self'>InterPhoto</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/sixiang' target='_self'>Poco思享</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/xzh' target='_self'>小紫盒 App icon</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/pocooa' target='_self'>Poco员工工作oa</a><a class='global-menu__item global-menu__item--demo-1' href='https://kexkeli.cn/c4d' target='_self'>Just Cinema4d</a>";
+}
+
+require(['https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js'], function() {
+//
+// these easing functions are based on the code of glsl-easing module.
+// https://github.com/glslify/glsl-easings
+//
+
+const ease = {
+  exponentialIn: (t) => {
+    return t == 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0));
+  },
+  exponentialOut: (t) => {
+    return t == 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t);
+  },
+  exponentialInOut: (t) => {
+    return t == 0.0 || t == 1.0
+      ? t
+      : t < 0.5
+        ? +0.5 * Math.pow(2.0, (20.0 * t) - 10.0)
+        : -0.5 * Math.pow(2.0, 10.0 - (t * 20.0)) + 1.0;
+  },
+  sineOut: (t) => {
+    const HALF_PI = 1.5707963267948966;
+    return Math.sin(t * HALF_PI);
+  },
+  circularInOut: (t) => {
+    return t < 0.5
+        ? 0.5 * (1.0 - Math.sqrt(1.0 - 4.0 * t * t))
+        : 0.5 * (Math.sqrt((3.0 - 2.0 * t) * (2.0 * t - 1.0)) + 1.0);
+  },
+  cubicIn: (t) => {
+    return t * t * t;
+  },
+  cubicOut: (t) => {
+    const f = t - 1.0;
+    return f * f * f + 1.0;
+  },
+  cubicInOut: (t) => {
+    return t < 0.5
+      ? 4.0 * t * t * t
+      : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0;
+  },
+  quadraticOut: (t) => {
+    return -t * (t - 2.0);
+  },
+  quarticOut: (t) => {
+    return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
+  },
+}
+
+class ShapeOverlays {
+  constructor(elm) {
+    this.elm = elm;
+    this.path = elm.querySelectorAll('path');
+    this.numPoints = 18;
+    this.duration = 600;
+    this.delayPointsArray = [];
+    this.delayPointsMax = 300;
+    this.delayPerPath = 100;
+    this.timeStart = Date.now();
+    this.isOpened = false;
+    this.isAnimating = false;
+  }
+  toggle() {
+    this.isAnimating = true;
+    const range = 4 * Math.random() + 6;
+    for (var i = 0; i < this.numPoints; i++) {
+      const radian = i / (this.numPoints - 1) * Math.PI;
+      this.delayPointsArray[i] = (Math.sin(-radian) + Math.sin(-radian * range) + 2) / 4 * this.delayPointsMax;
+    }
+    if (this.isOpened === false) {
+      this.open();
+    } else {
+      this.close();
+    }
+  }
+  open() {
+    this.isOpened = true;
+    this.elm.classList.add('is-opened');
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  close() {
+    this.isOpened = false;
+    this.elm.classList.remove('is-opened');
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  updatePath(time) {
+    const points = [];
+    for (var i = 0; i < this.numPoints + 1; i++) {
+      points[i] = ease.cubicInOut(Math.min(Math.max(time - this.delayPointsArray[i], 0) / this.duration, 1)) * 100
+    }
+
+    let str = '';
+    str += (this.isOpened) ? `M 0 0 V ${points[0]} ` : `M 0 ${points[0]} `;
+    for (var i = 0; i < this.numPoints - 1; i++) {
+      const p = (i + 1) / (this.numPoints - 1) * 100;
+      const cp = p - (1 / (this.numPoints - 1) * 100) / 2;
+      str += `C ${cp} ${points[i]} ${cp} ${points[i + 1]} ${p} ${points[i + 1]} `;
+    }
+    str += (this.isOpened) ? `V 0 H 0` : `V 100 H 0`;
+    return str;
+  }
+  render() {
+    if (this.isOpened) {
+      for (var i = 0; i < this.path.length; i++) {
+        this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * i)));
+      }
+    } else {
+      for (var i = 0; i < this.path.length; i++) {
+        this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * (this.path.length - i - 1))));
+      }
+    }
+  }
+  renderLoop() {
+    this.render();
+    if (Date.now() - this.timeStart < this.duration + this.delayPerPath * (this.path.length - 1) + this.delayPointsMax) {
+      requestAnimationFrame(() => {
+        this.renderLoop();
+      });
+    }
+    else {
+      this.isAnimating = false;
+    }
+  }
+}
+
+(function() {
+  const elmHamburger = document.querySelector('.hamburger');
+  const gNavItems = document.querySelectorAll('.global-menu__item');
+  const elmOverlay = document.querySelector('.shape-overlays');
+  const overlay = new ShapeOverlays(elmOverlay);
+  const gNavWrap = document.querySelector('.global-menu__wrap');
+
+  elmHamburger.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+  elmOverlay.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+$('.global-menu__wrap a[href*="#"]:not([href="#"])').click(function() {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+});
+}());
+
+$(function() {
+  $('.global-menu__wrap a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top -0
+        }, 1000, 'linear');
+        return false;
+      }
+    }
+  });
+});
+
+});
+
+	}
+	catch(e)
+	{
+		Muse.Assert.fail('Error with Widget:SVG Menus - Menu 1 (1.0) ParamHTMLOnDocReady Handler ' + e.toString());
+	}
+})();/* Widget:SVG Menus - Menu 1 (1.0) */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=4286661555" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  
+<script>
+  $(document).ready(() => {
+    $('body').prepend('<div id="mt-progress-bar"></div>');
+    const theBar = $('#mt-progress-bar');
+
+    $(window).scroll(() => {
+      const verticalPosition = $(window).scrollTop();
+      const totalHeight = $('body').height();
+      const viewportHeight = $(window).height();
+      
+      const totalScroll = (verticalPosition / (totalHeight - viewportHeight)) * 100;
+      theBar.css('width', totalScroll + '%');
+    });
+  });
+
+  console.log('Scroll Progress Bar (1.0) - Muse-Themes.com');
+</script>
+
+<script>
+$(function() {
+  var $body = $(document);
+  $body.bind('scroll', function() {
+      if ($body.scrollLeft() !== 0) {
+          $body.scrollLeft(0);
+      }
+  });
+});
+</script>
+
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu4828');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu4828 = document.getElementById('sceneu4828');
+		    var parallaxu4828 = new Parallax(sceneu4828);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu4837');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu4837 = document.getElementById('sceneu4837');
+		    var parallaxu4837 = new Parallax(sceneu4837);
+		</script>
+   
+    
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/parallax.js"></script> 
+		
+		<script>
+
+            console.log("Parallax Backgrounds - Version 1.0 - MuseThemes.com");
+
+		 /* var scene = document.getElementById('sceneu4847');
+		  var clipCheckbox = document.getElementById('clip');
+		  var relativeCheckbox = document.getElementById('relative');
+		*/
+		    var sceneu4847 = document.getElementById('sceneu4847');
+		    var parallaxu4847 = new Parallax(sceneu4847);
+		</script>
+   
+    
+   </body>
+</html>

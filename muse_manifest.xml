@@ -1,8 +1,8 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1583077788941">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1587475919883">
   <folder name="css">
     <file name="site_global.css" crc="4032761925"/>
-    <file name="index.css" crc="141092215" ref="index"/>
-    <file name="nomq_index.css" crc="3787600569" ref="index"/>
+    <file name="index.css" crc="3967548232" ref="index"/>
+    <file name="nomq_index.css" crc="83099719" ref="index"/>
   </folder>
   <folder name="fonts">
     <file name="oswald-bold.woff" crc="474070346"/>
@@ -17,7 +17,7 @@
     <file name="8.jpg" crc="287906909" seo="true" mt="1582228121000"/>
     <file name="12.jpg" crc="3968057950" seo="true" mt="1582762524000"/>
     <file name="11-2.jpg" crc="3889280391" seo="true" mt="1583014515000"/>
-    <file name="9-2.png" crc="4182385162" seo="true" mt="1583015097000"/>
+    <file name="9-4.png" crc="3890581412" seo="true" mt="1586534028000"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -34,13 +34,12 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
     </file>
     <file name="4.jpg" crc="274431076" seo="true" ref="index">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-    </file>
-    <file name="sx.jpg" crc="3847902505" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="pocooa2.jpg" crc="392195289" seo="true" ref="index">
@@ -53,8 +52,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
     </file>
     <file name="10.jpg" crc="228213640" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
@@ -63,7 +64,20 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="9-3.jpg" crc="3784783059" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="9-3342x342.jpg" crc="4016045613" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pocooa2342x342.jpg" crc="128567609" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="nazha33342x342.jpg" crc="128879514" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="509354896" seo="true" mt="1583077463479" redirect="true"/>
+  <file name="index.html" crc="3784905831" seo="true" mt="1587475658184" redirect="true"/>
 </manifest>

@@ -1,0 +1,27 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1588997089401">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="3998463007" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="logo.svg" crc="4042938167" seo="true" mt="1588969616000"/>
+    <file name="1.svg" crc="3803645041" seo="true" mt="1588974396000"/>
+    <file name="2.svg" crc="36616054" seo="true" mt="1588974295000"/>
+    <file name="3.svg" crc="3786735333" seo="true" mt="1588974236000"/>
+    <file name="3.jpg" crc="3771966581" seo="true" mt="1588984455000"/>
+    <file name="4.png" crc="3918397094" seo="true" mt="1588984470000"/>
+    <file name="1.jpg" crc="3996375807" seo="true" mt="1588988729000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+  </folder>
+  <file name="index.html" crc="107725830" seo="true" mt="1588997038228" redirect="true"/>
+</manifest>

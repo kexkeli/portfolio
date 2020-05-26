@@ -1,4 +1,4 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1590451091086">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1590451395296">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="index.css" crc="90522614" ref="index"/>
@@ -93,5 +93,5 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="4099767612" mt="1590451016555" redirect="true"/>
+  <file name="index.html" crc="445924249" mt="1590451387876" redirect="true"/>
 </manifest>

@@ -1,4 +1,4 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1591357051637">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kexkeli.cn" resolutions="1x" timestamp="1591357437211">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="index.css" crc="3929093412" ref="index"/>
@@ -16,5 +16,5 @@
     <file name="museconfig.js" crc="4286661555" ref="index"/>
     <file name="require.js" crc="7928878" ref="index"/>
   </folder>
-  <file name="index.html" crc="4031177709" seo="true" mt="1591357020204" redirect="true"/>
+  <file name="index.html" crc="440317654" seo="true" mt="1591357417531" redirect="true"/>
 </manifest>
